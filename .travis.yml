@@ -1,0 +1,6 @@
+sudo: required
+language: python
+services:
+- docker
+script:
+- docker image build --tag travis-docker-demo:latest -f ./Dockerfile.prod .
